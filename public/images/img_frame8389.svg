@@ -1,0 +1,22 @@
+<svg width="550" height="50" viewBox="0 0 550 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_1_647" fill="white">
+<path d="M0 0H70V50H0V0Z"/>
+</mask>
+<path d="M70 49H0V51H70V49Z" fill="#999D9F" mask="url(#path-1-inside-1_1_647)"/>
+<mask id="path-3-inside-2_1_647" fill="white">
+<path d="M120 0H190V50H120V0Z"/>
+</mask>
+<path d="M190 49H120V51H190V49Z" fill="#999D9F" mask="url(#path-3-inside-2_1_647)"/>
+<mask id="path-5-inside-3_1_647" fill="white">
+<path d="M240 0H310V50H240V0Z"/>
+</mask>
+<path d="M310 49H240V51H310V49Z" fill="#999D9F" mask="url(#path-5-inside-3_1_647)"/>
+<mask id="path-7-inside-4_1_647" fill="white">
+<path d="M360 0H430V50H360V0Z"/>
+</mask>
+<path d="M430 49H360V51H430V49Z" fill="#999D9F" mask="url(#path-7-inside-4_1_647)"/>
+<mask id="path-9-inside-5_1_647" fill="white">
+<path d="M480 0H550V50H480V0Z"/>
+</mask>
+<path d="M550 49H480V51H550V49Z" fill="#999D9F" mask="url(#path-9-inside-5_1_647)"/>
+</svg>
