@@ -6,7 +6,7 @@ const Home = () => {
       <h1>Homepage</h1>
       <p className="headline">
         This project is built By{" "}
-        <a href="https://www.dhiwise.com">Victor Ikurekong</a>. The links below
+        <a href="https://real-personal-portfolio.vercel.app/">Victor Ikurekong</a>. The links below
         are all page navigations.
       </p>
       <ul>

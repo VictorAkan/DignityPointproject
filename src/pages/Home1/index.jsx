@@ -18,7 +18,7 @@ const Home1Page = () => {
               <div className="flex md:flex-col flex-row gap-3 items-center justify-start max-w-[1352px] mt-1 mx-auto md:px-5 w-full">
                 <div className="flex flex-1 flex-col gap-5 items-start justify-start max-w-[720px] w-full">
                   <Text
-                    className="leading-[80.00px] max-w-[720px] md:max-w-full md:text-5xl text-[70px] text-white-A700"
+                    className="leading-[80.00px] text-left sm:text-center max-w-[720px] md:max-w-full md:text-5xl sm:text-[40px] text-[70px] text-white-A700"
                     size="txtPoppinsSemiBold70"
                   >
                     <span className="text-white-A700 font-poppins text-left font-semibold">
@@ -29,19 +29,20 @@ const Home1Page = () => {
                     </span>
                   </Text>
                   <Text
-                    className="max-w-[720px] md:max-w-full text-white-A700 text-xl"
+                    className="max-w-[720px] text-left sm:text-center sm:text-[16px] md:max-w-full text-white-A700 text-xl"
                     size="txtPoppinsSemiBold20"
                   >
                     We give you the tools to unleash your trillion U.S dollar
                     potential, passion and purpose for the delivery of a
                     sustainable future for all.
                   </Text>
-                  <div className="flex sm:flex-col flex-row gap-5 items-start justify-start w-auto sm:w-full">
+                  <div className="flex sm:flex-col flex-row gap-5 items-start sm:items-center justify-start w-auto sm:w-full">
                     <Button
                       className="cursor-pointer font-semibold leading-[normal] min-w-[200px] rounded-[12px] text-center text-xl"
                       color="white_A700"
                       size="md"
                       variant="outline"
+                      onClick={() => navigate("/createnewaccount")}
                     >
                       Get Started
                     </Button>
@@ -68,7 +69,7 @@ const Home1Page = () => {
         <div className="flex flex-col gap-[30px] items-center justify-start max-w-[1352px] mt-[58px] mx-auto md:px-5 w-full">
           <div className="flex flex-col gap-2.5 items-center justify-start w-auto md:w-full">
             <Text
-              className="sm:text-[40px] md:text-[46px] text-[50px] text-black-900_01 text-center w-auto"
+              className="sm:text-[36px] md:text-[46px] text-[50px] text-black-900_01 text-center w-auto"
               size="txtPoppinsSemiBold50"
             >
               <span className="text-black-900_01 font-poppins font-semibold">
@@ -79,14 +80,14 @@ const Home1Page = () => {
               </span>
             </Text>
             <Text
-              className="text-center text-gray-700 text-xl w-auto"
+              className="text-center text-gray-700 sm:text-[16px] text-xl w-auto"
               size="txtPoppinsMedium20"
             >
               Building the needed solutions, creating deep connections for
               global dominion.
             </Text>
           </div>
-          <div className="md:gap-10 gap-[81px] grid sm:grid-cols-1 grid-cols-10 md:grid-cols-5 items-start justify-between max-w-[1352px] w-full">
+          <div className="md:gap-10 gap-[81px] grid sm:grid-cols-3 grid-cols-10 md:grid-cols-5 items-start justify-between max-w-[1352px] w-full">
             <Img
               className="h-[70px] md:h-auto rounded-[50%] w-[70px]"
               src="images/img_janet_70x70.png"
@@ -133,63 +134,63 @@ const Home1Page = () => {
               alt="jonas"
             />
             <Img
-              className="h-[70px] md:h-auto rounded-[50%] w-[70px]"
+              className="h-[70px] sm:invisible visible md:h-auto rounded-[50%] w-[70px]"
               src="images/img_tracy_70x70.png"
               alt="tracy"
             />
           </div>
         </div>
-        <div className="flex md:flex-col flex-row gap-[30px] items-start justify-start max-w-[1352px] mt-[60px] mx-auto md:px-5 w-full">
-          <div className="bg-white-A700 flex md:flex-1 flex-col items-center justify-end p-[85px] md:px-10 sm:px-5 rounded-[20px] shadow-bs2 w-[316px] md:w-full">
+        <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-[30px] md:gap-[15.3px] max-w-[1352px] mt-[60px] sm:mt-[10px] mx-auto md:px-5 w-full">
+          <div className="bg-white-A700 flex md:flex-1 flex-col items-center justify-end p-[85px] sm:p-[50px] md:px-10 sm:rounded-[10.2px] rounded-[20px] sm:h-[200px] shadow-bs2 w-[316px] md:w-full">
             <div className="flex flex-col gap-[30px] items-center justify-start mt-[3px] w-auto">
               <Img
-                className="h-20 w-20"
+                className="h-20 w-20 sm:w-[40.79px] sm:h-[40.79px]"
                 src="images/img_thumbsup_green_700.svg"
                 alt="thumbsup"
               />
               <Text
-                className="text-black-900 text-center text-xl w-auto"
+                className="text-black-900 text-center sm:text-sm text-xl w-auto"
                 size="txtPoppinsSemiBold20Black900"
               >
                 Marketplace
               </Text>
             </div>
           </div>
-          <div className="bg-white-A700 flex md:flex-1 flex-col items-center justify-center p-[11px] rounded-[20px] shadow-bs2 w-[24%] md:w-full">
-            <div className="flex flex-col gap-[30px] items-center justify-start my-[77px] w-auto">
+          <div className="bg-white-A700 flex md:flex-1 flex-col items-center justify-center p-[11px] sm:rounded-[10.2px] rounded-[20px] sm:h-[200px] shadow-bs2 w-[315px] md:w-full">
+            <div className="flex flex-col gap-[30px] sm:gap-[15.3px] items-center justify-start my-[77px] w-auto">
               <Img
-                className="h-20 w-20"
+                className="h-20 w-20 sm:w-[40.79px] sm:h-[40.79px"
                 src="images/img_settings.svg"
                 alt="settings"
               />
               <Text
-                className="text-black-900 text-center text-xl w-auto"
+                className="text-black-900 text-center sm:text-sm text-xl w-auto"
                 size="txtPoppinsSemiBold20Black900"
               >
                 Trillonaire Adventure
               </Text>
             </div>
           </div>
-          <div className="bg-white-A700 flex md:flex-1 flex-col items-center justify-center p-[63px] md:px-10 sm:px-5 rounded-[20px] shadow-bs2 w-[24%] md:w-full">
+          <div className="bg-white-A700 flex md:flex-1 flex-col items-center justify-center p-[63px] md:px-10 sm:px-5 sm:rounded-[10.2px] sm:h-[200px] rounded-[20px] shadow-bs2 w-[315px] md:w-full">
             <div className="flex flex-col gap-[30px] items-center justify-start mb-[23px] mt-[26px] w-auto">
-              <Img className="h-20 w-20" src="images/img_user.svg" alt="user" />
+              <Img className="h-20 w-20 sm:w-[40.79px] sm:h-[40.79px" src="images/img_user.svg" alt="user" />
               <Text
-                className="text-black-900 text-center text-xl w-auto"
+                className="text-black-900 text-center sm:text-sm text-xl w-auto"
                 size="txtPoppinsSemiBold20Black900"
               >
                 Social Community
               </Text>
             </div>
           </div>
-          <div className="bg-white-A700 flex md:flex-1 flex-col items-center justify-center p-[70px] md:px-10 sm:px-5 rounded-[20px] shadow-bs2 w-[316px] md:w-full">
+          <div className="bg-white-A700 flex md:flex-1 flex-col items-center justify-center p-[70px] md:px-10 sm:px-5 sm:rounded-[10.2px] rounded-[20px] sm:h-[200px] shadow-bs2 w-[316px] md:w-full">
             <div className="flex flex-col gap-[30px] items-center justify-start my-[18px] w-auto">
               <Img
-                className="h-20 w-20"
+                className="h-20 w-20 sm:w-[40.79px] sm:h-[40.79px"
                 src="images/img_thumbsup_green_100.svg"
                 alt="thumbsup_One"
               />
               <Text
-                className="text-black-900 text-center text-xl w-auto"
+                className="text-black-900 text-center sm:text-sm text-xl w-auto"
                 size="txtPoppinsSemiBold20Black900"
               >
                 Tribes/ Academy
@@ -197,11 +198,11 @@ const Home1Page = () => {
             </div>
           </div>
         </div>
-        <div className="h-[1185px] sm:h-[1245px] md:h-[2132px] max-w-[1362px] mt-[60px] mx-auto md:px-5 relative w-full">
-          <div className="absolute flex flex-col gap-[30px] h-full inset-[0] items-center justify-center m-auto w-full">
+        <div className="h-[1185px] sm:h-[1245px] md:h-[2132px] max-w-[1362px] sm:mt-[100px] mt-[60px] mx-auto md:px-5 relative w-full">
+          <div className="flex flex-col sm:mt-[300px] gap-[30px] h-full items-center justify-center m-auto w-full">
             <div className="flex flex-col items-center justify-between max-w-[1352px] w-full">
               <Text
-                className="sm:text-[40px] md:text-[46px] text-[50px] text-black-900_01"
+                className="text-left md:text-center mt-0 md:mt-[10rem] sm:mt-[11rem] md:text-[46px] text-[50px] sm:text-[36px] text-black-900_01"
                 size="txtPoppinsSemiBold50"
               >
                 <span className="text-black-900_01 font-poppins text-left font-semibold">
@@ -213,27 +214,34 @@ const Home1Page = () => {
                 <span className="text-black-900_01 font-poppins text-left font-semibold">
                   <>
                     {" "}
-                    Possibilities, Unlocking Your Trillion U.S dollars Asset.
+                    Possibilities<span className="visible sm:invisible">, Unlocking Your Trillion U.S dollars Asset.</span>
                     <br />
                   </>
                 </span>
               </Text>
             </div>
             <List
-              className="flex flex-col gap-[67px] items-center w-full"
+              className="flex flex-col gap-[67px] items-center sm:mt-[-150px] w-full"
               orientation="vertical"
             >
-              <div className="flex flex-1 flex-col items-end justify-start max-w-[1352px] w-full">
-                <div className="flex flex-col gap-[30px] items-end justify-start w-auto md:w-full">
-                  <div className="flex md:flex-col flex-row gap-2.5 items-center justify-start w-auto md:w-full">
+              <div className="flex flex-1 md:flex-col items-end justify-between max-w-[1352px] w-full">
+                <Img
+            className="h-[398px] md:h-auto md:self-center object-cover md:rounded-tl-[20px] md:rounded-br-[20px] rounded-tl-0 rounded-tl-[50px]"
+            src="images/img_rectangle1627_398x662.png"
+            alt="rectangle1627"
+          />
+                <div className="flex flex-col gap-[30px] items-end mt-0 md:mt-10 justify-start w-auto md:w-full">
+                  <div className="flex md:flex-row gap-2.5 items-center justify-start w-auto md:w-full">
                     <Text
-                      className="max-w-[429px] md:max-w-full text-black-900_01 text-right text-xl"
+                      className="max-w-[429px] order-1 sm:order-2 sm:text-[10.14px] md:max-w-full text-black-900_01 text-right md:text-center sm:text-right text-xl"
                       size="txtPoppinsSemiBold20Black90001"
                     >
-                      Find friends, build deep connections that opens more doors
-                      to endless possibilities
+                      <span className="sm:hidden">Find friends, build deep connections that opens more doors
+                      to endless possibilities</span>
+                      <span className="hidden sm:block">Find offline friends, meet new ones, share photos, videos here</span>
                     </Text>
-                    <div className="bg-gradient2  flex flex-col h-[200px] items-center justify-end p-[15px] rounded-[20px] shadow-bs3 w-[200px]">
+                    <div className="order-2 sm:order-1 flex items-center">
+                    <div className="bg-gradient2 order-1 sm:order-2 flex flex-col h-[200px] sm:w-[101.4px] sm:h-[101.4px] sm:rounded-[10.14px] items-center justify-end p-[15px] rounded-[20px] shadow-bs3 w-[200px]">
                       <Img
                         className="h-[168px] md:h-auto object-cover w-[95%]"
                         src="images/img_chat3d1.png"
@@ -241,21 +249,24 @@ const Home1Page = () => {
                       />
                     </div>
                     <Text
-                      className="text-green-700 text-xl w-auto"
+                      className="text-green-700 order-2 sm:order-1 text-xl pl-3 sm:pl-0 w-auto"
                       size="txtPoppinsSemiBold20Green700"
                     >
                       01.
                     </Text>
+                    </div>
                   </div>
-                  <div className="flex md:flex-col flex-row gap-2.5 items-center justify-start w-auto md:w-full">
+                  <div className="flex md:flex-row gap-2.5 items-center justify-start w-auto md:w-full">
                     <Text
-                      className="max-w-[444px] md:max-w-full text-black-900_01 text-right text-xl"
+                      className="max-w-[444px] sm:max-w-[429px] sm:pl-[30px] order-1 sm:order-2 sm:text-[10.14px] md:max-w-full text-black-900_01 text-right text-xl"
                       size="txtPoppinsSemiBold20Black90001"
                     >
-                      Create or Join Deep-thoughts Groups/ Pages that Stretch
-                      your intellectual Capacity to create Sustainable Solutions
+                      <span className="sm:hidden">Create or Join Deep-thoughts Groups/ Pages that Stretch
+                      your intellectual Capacity to create Sustainable Solutions</span>
+                      <span className="hidden sm:block">Follow people you like, join groups,</span>
                     </Text>
-                    <div className="bg-gradient2  flex flex-col h-[200px] items-center justify-start p-5 rounded-[20px] shadow-bs3 w-[200px]">
+                    <div className="order-2 sm:order-1 flex items-center">
+                    <div className="bg-gradient2 order-1 sm:order-2 flex flex-col h-[200px] items-center justify-start sm:w-[101.4px] sm:h-[101.4px] sm:rounded-[10.14px] p-5 rounded-[20px] shadow-bs3 w-[200px]">
                       <Img
                         className="h-[113px] md:h-auto my-[23px] object-cover w-full"
                         src="images/img_social3d.png"
@@ -263,54 +274,64 @@ const Home1Page = () => {
                       />
                     </div>
                     <Text
-                      className="text-green-700 text-xl"
+                      className="text-green-700 order-2 sm:order-1 pl-3 sm:pl-0 text-xl"
                       size="txtPoppinsSemiBold20Green700"
                     >
                       02.
                     </Text>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="flex flex-1 md:flex-col flex-row gap-6 items-end justify-between pr-3.5 w-full">
+                <Img
+                  className="h-[398px] md:h-auto hidden md:block md:mt-0 mt-[35px] object-cover md:rounded-tl-[20px] md:rounded-br-[20px] sm:rounded-tr-0 rounded-tl-[50px]"
+                  src="images/img_rectangle1627.png"
+                  alt="rectangle1627"
+                />
                 <div className="flex md:flex-1 flex-col gap-[30px] items-start justify-start mb-[3px] w-auto md:w-full">
-                  <div className="flex md:flex-col flex-row gap-2.5 items-center justify-start w-auto md:w-full">
+                  <div className="flex md:flex-row gap-2.5 items-center justify-start w-auto md:w-full">
+                    <div className="flex items-center">
                     <Text
-                      className="text-green-700 text-xl"
+                      className="text-green-700 pr-3 sm:pr-0 text-xl"
                       size="txtPoppinsSemiBold20Green700"
                     >
                       03.
                     </Text>
-                    <div className="bg-gradient2  flex flex-col h-[200px] items-center justify-start p-5 rounded-[20px] shadow-bs3 w-[200px]">
+                    <div className="bg-gradient2  flex flex-col h-[200px] sm:w-[101.4px] sm:h-[101.4px] sm:rounded-[10.14px] items-center justify-start p-5 rounded-[20px] shadow-bs3 w-[200px]">
                       <Img
                         className="h-[141px] md:h-auto my-[9px] object-cover w-full"
                         src="images/img_money3d.png"
                         alt="money3d"
                       />
                     </div>
+                    </div>
                     <Text
-                      className="max-w-[400px] md:max-w-full text-black-900_01 text-xl"
+                      className="max-w-[400px] md:max-w-full sm:text-[10.14px] text-black-900_01 text-left sm:text-right text-xl"
                       size="txtPoppinsSemiBold20Black90001"
                     >
                       Earn rewards, bonus and refferal rewards in the membership
                       area
                     </Text>
                   </div>
-                  <div className="flex md:flex-col flex-row gap-2.5 items-center justify-start w-auto md:w-full">
+                  <div className="flex md:flex-row gap-2.5 items-center justify-start w-auto md:w-full">
+                    <div className="flex items-center">
                     <Text
-                      className="text-green-700 text-xl w-auto"
+                      className="text-green-700 text-xl pr-3 sm:pr-0 w-auto"
                       size="txtPoppinsSemiBold20Green700"
                     >
                       04.
                     </Text>
-                    <div className="bg-gradient2  flex flex-col h-[200px] items-center justify-start p-5 rounded-[20px] shadow-bs3 w-[200px]">
+                    <div className="bg-gradient2  flex flex-col h-[200px] sm:w-[101.4px] sm:h-[101.4px] sm:rounded-[10.14px] items-center justify-start p-5 rounded-[20px] shadow-bs3 w-[200px]">
                       <Img
                         className="h-[131px] md:h-auto my-3.5 object-cover w-full"
                         src="images/img_business1.png"
                         alt="businessOne"
                       />
                     </div>
+                    </div>
                     <Text
-                      className="max-w-[400px] md:max-w-full text-black-900_01 text-xl"
+                      className="max-w-[400px] md:max-w-full sm:text-[10.14px] text-black-900_01 text-xl"
                       size="txtPoppinsSemiBold20Black90001"
                     >
                       Pages and marketplace gives you tools to promote your
@@ -319,20 +340,15 @@ const Home1Page = () => {
                   </div>
                 </div>
                 <Img
-                  className="h-[398px] md:h-auto md:mt-0 mt-[35px] object-cover rounded-tr-[50px]"
+                  className="h-[398px] md:h-auto md:hidden md:mt-0 mt-[35px] object-cover rounded-tr-[50px]"
                   src="images/img_rectangle1627.png"
                   alt="rectangle1627"
                 />
               </div>
             </List>
           </div>
-          <Img
-            className="absolute h-[398px] left-[0] object-cover rounded-tl-[50px] top-[22%] w-[49%]"
-            src="images/img_rectangle1627_398x662.png"
-            alt="rectangle1627"
-          />
         </div>
-        <div className="bg-gray-300 flex sm:flex-col flex-row gap-[53px] items-center justify-start mt-[150px] p-[18px] w-full">
+        <div className="bg-gray-300 flex md:flex-col flex-row gap-[53px] items-center justify-start mt-[150px] p-[18px] w-full">
           <Img
             className="md:flex-1 h-[478px] sm:h-auto sm:ml-[0] ml-[98px] object-cover w-[35%] md:w-full"
             src="images/img_image97.png"
@@ -574,6 +590,7 @@ const Home1Page = () => {
               color="green_100"
               size="md"
               variant="fill"
+              onClick={() => navigate("/createnewaccount")}
             >
               Get Started
             </Button>
@@ -610,3 +627,4 @@ const Home1Page = () => {
 };
 
 export default Home1Page;
+

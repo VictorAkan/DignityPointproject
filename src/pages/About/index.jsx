@@ -14,7 +14,7 @@ const AboutPage = () => {
         <header className="flex flex-col items-center justify-center px-20 md:px-5 py-3.5 w-full">
           <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-[1352px] w-full">
             <div className="header-row mt-3 mb-[11px]">
-              <div className="flex flex-row gap-[5px] items-center justify-center">
+              <div className="flex flex-row order-2 sm:order-1 gap-[5px] items-center justify-center">
                 <Img
                   className="h-[29px] md:h-auto object-cover w-[30px]"
                   src="images/img_malipoma.png"

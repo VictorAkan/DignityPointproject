@@ -11,7 +11,7 @@ const Header2 = (props) => {
       <header className={props.className}>
         <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-[1412px] w-full">
           <div className="header-row mt-[3px] mb-px">
-            <div className="flex flex-row gap-[5px] items-center justify-center">
+            <div className="flex flex-row order-1 sm:order-2 gap-[5px] items-center justify-center">
               <Img
                 className="h-[29px] md:h-auto object-cover w-[30px]"
                 src="images/img_malipoma.png"
