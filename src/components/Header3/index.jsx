@@ -1,11 +1,15 @@
 import React from "react";
 
 import { useNavigate } from "react-router-dom";
+import { IoCloseOutline } from "react-icons/io5";
+import { useState } from "react";
+import clsx from "clsx";
 
 import { Button, Img, Text } from "components";
 
 const Header3 = (props) => {
   const navigate = useNavigate();
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
@@ -27,11 +31,61 @@ const Header3 = (props) => {
               </Text>
               </Button>
             </div>
-            <div className="mobile-menu">
-              <div></div>
-              <div></div>
-              <div></div>
+
+            {/* sidebar mobile menu */}
+            <div className={clsx("fixed h-full w-screen hidden sm:block bg-green-600/50 backdrop-blur-sm top-0 right-0 -translate-x-full transition-all",
+            isMenuOpen && "translate-x-0")}>
+              <section className="text-black-900 bg-white-A700 flex-col absolute left-0 top-0
+              h-screen p-8 gap-8 z-50 flex w-56">
+                <IoCloseOutline onClick={() => setMenuOpen(false)} className="mt-0 mb-8 text-3xl cursor-pointer" />
+                <Button onClick={() => navigate("/home1")}>
+                <Text
+                  className="text-base text-black-900_01 text-center w-auto"
+                  size="txtPoppinsSemiBold16Black90001"
+                >
+                  Home
+                </Text>
+                </Button>
+                <Button onClick={() => navigate("/about")}>
+                <Text
+                  className="text-base text-black-900_01 text-center w-auto"
+                  size="txtPoppinsSemiBold16Black90001"
+                >
+                  About
+                </Text>
+                </Button>
+                <Button onClick={() => navigate("/support")}>
+                <Text
+                  className="text-base text-black-900_01 text-center w-auto"
+                  size="txtPoppinsSemiBold16Black90001"
+                >
+                  Support
+                </Text>
+                </Button>
+                <Text
+                className="common-pointer text-green-700 text-center text-lg w-auto"
+                size="txtPoppinsSemiBold18"
+                onClick={() => navigate("/login")}
+              >
+                LOGIN
+              </Text>
+              <Button
+                className="common-pointer cursor-pointer font-poppins text-green-700 font-semibold leading-[normal] min-w-[120px] rounded-[12px] text-center text-lg"
+                onClick={() => navigate("/createnewaccount")}
+                color="black_900"
+                size="sm"
+                variant="fill"
+              >
+                SIGNUP
+              </Button>
+              </section>
             </div>
+
+            <Button onClick={() => setMenuOpen(true)} className="mobile-menu cursor-pointer">
+              <div></div>
+              <div></div>
+              <div></div>
+            </Button>
           </div>
           <div className="flex sm:flex-col flex-row gap-[30px] h-[55px] md:h-auto sm:hidden items-center justify-start w-auto">
             <div className="flex flex-row gap-[30px] items-start justify-start w-auto">

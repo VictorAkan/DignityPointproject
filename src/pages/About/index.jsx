@@ -1,4 +1,5 @@
 import React from "react";
+import Header3 from "components/Header3";
 
 import { useNavigate } from "react-router-dom";
 
@@ -11,7 +12,7 @@ const AboutPage = () => {
   return (
     <>
       <div className="bg-white-A700_01 flex flex-col font-poppins items-center justify-start mx-auto w-full">
-        <header className="flex flex-col items-center justify-center px-20 md:px-5 py-3.5 w-full">
+        <header className="flex sm:hidden flex-col items-center justify-center px-20 md:px-5 py-3.5 w-full">
           <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-[1352px] w-full">
             <div className="header-row mt-3 mb-[11px]">
               <div className="flex flex-row order-2 sm:order-1 gap-[5px] items-center justify-center">
@@ -80,6 +81,7 @@ const AboutPage = () => {
             </div>
           </div>
         </header>
+        <Header3 className="bg-white-A700 hidden sm:flex gap-2.5 items-center justify-center px-20 md:px-5 py-3.5 w-full" />
         <div className="flex sm:flex-col flex-row md:gap-10 items-center justify-between max-w-[1352px] mt-[61px] mx-auto md:px-5 w-full">
           <Text
             className="max-w-[491px] md:max-w-full sm:text-[40px] md:text-[46px] text-[50px] text-black-900_01"
