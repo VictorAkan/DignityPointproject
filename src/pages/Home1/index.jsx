@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Line, List, Text } from "components";
 import Header1 from "components/Header1";
+import Header3 from "components/Header3";
 
 const Home1Page = () => {
   const navigate = useNavigate();
@@ -14,11 +15,12 @@ const Home1Page = () => {
         <div className="bg-blue_gray-50_01 flex flex-col items-center justify-start w-full">
           <div className="bg-gradient  flex flex-col items-center justify-start pb-[88px] w-full">
             <div className="flex flex-col items-center justify-start w-full">
-              <Header1 className="flex flex-col gap-2.5 items-center justify-center px-20 md:px-5 py-5 w-full" />
+              <Header1 className="flex sm:hidden flex-col gap-2.5 items-center justify-center px-20 md:px-5 py-5 w-full" />
+              <Header3 className="bg-white-A700 hidden sm:flex gap-2.5 items-center justify-center px-20 md:px-5 py-3.5 w-full" />
               <div className="flex md:flex-col flex-row gap-3 items-center justify-start max-w-[1352px] mt-1 mx-auto md:px-5 w-full">
                 <div className="flex flex-1 flex-col gap-5 items-start justify-start max-w-[720px] w-full">
                   <Text
-                    className="leading-[80.00px] text-left sm:text-center max-w-[720px] md:max-w-full md:text-5xl sm:text-[40px] text-[70px] text-white-A700"
+                    className="leading-[80.00px] text-left sm:text-center max-w-[720px] md:max-w-full md:text-5xl xs:text-[30px] sm:text-[40px] text-[70px] text-white-A700"
                     size="txtPoppinsSemiBold70"
                   >
                     <span className="text-white-A700 font-poppins text-left font-semibold">
@@ -87,7 +89,7 @@ const Home1Page = () => {
               global dominion.
             </Text>
           </div>
-          <div className="md:gap-10 gap-[81px] grid sm:grid-cols-3 grid-cols-10 md:grid-cols-5 items-start justify-between max-w-[1352px] w-full">
+          <div className="md:gap-10 gap-[81px] grid sm:grid-cols-3 mm:grid-cols-4 grid-cols-10 md:grid-cols-5 items-start justify-between max-w-[1352px] w-full">
             <Img
               className="h-[70px] md:h-auto rounded-[50%] w-[70px]"
               src="images/img_janet_70x70.png"
@@ -140,7 +142,7 @@ const Home1Page = () => {
             />
           </div>
         </div>
-        <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-[30px] md:gap-[15.3px] max-w-[1352px] mt-[60px] sm:mt-[10px] mx-auto md:px-5 w-full">
+        <div className="grid grid-cols-4 mm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[30px] md:gap-[15.3px] max-w-[1352px] mt-[60px] sm:mt-[10px] mx-auto md:px-5 w-full">
           <div className="bg-white-A700 flex md:flex-1 flex-col items-center justify-end p-[85px] sm:p-[50px] md:px-10 sm:rounded-[10.2px] rounded-[20px] sm:h-[200px] shadow-bs2 w-[316px] md:w-full">
             <div className="flex flex-col gap-[30px] items-center justify-start mt-[3px] w-auto">
               <Img
@@ -198,11 +200,11 @@ const Home1Page = () => {
             </div>
           </div>
         </div>
-        <div className="h-[1185px] sm:h-[1245px] md:h-[2132px] max-w-[1362px] sm:mt-[100px] mt-[60px] mx-auto md:px-5 relative w-full">
-          <div className="flex flex-col sm:mt-[300px] gap-[30px] h-full items-center justify-center m-auto w-full">
+        <div className="h-[1185px] sm:h-[1245px] md:h-[2132px] max-w-[1362px] sm:mt-[10px] mt-[60px] mx-auto md:px-5 relative w-full">
+          <div className="flex flex-col sm:mt-[10px] gap-[30px] h-full items-center justify-center m-auto w-full">
             <div className="flex flex-col items-center justify-between max-w-[1352px] w-full">
               <Text
-                className="text-left md:text-center mt-0 md:mt-[10rem] sm:mt-[11rem] md:text-[46px] text-[50px] sm:text-[36px] text-black-900_01"
+                className="text-left md:text-center mt-0 md:mt-[10rem] md:text-[46px] text-[50px] sm:text-[36px] text-black-900_01"
                 size="txtPoppinsSemiBold50"
               >
                 <span className="text-black-900_01 font-poppins text-left font-semibold">
@@ -307,7 +309,7 @@ const Home1Page = () => {
                     </div>
                     </div>
                     <Text
-                      className="max-w-[400px] md:max-w-full sm:text-[10.14px] text-black-900_01 text-left sm:text-right text-xl"
+                      className="max-w-[400px] md:max-w-full sm:leading-tight sm:text-[10.14px] text-black-900_01 text-left sm:text-right text-xl"
                       size="txtPoppinsSemiBold20Black90001"
                     >
                       Earn rewards, bonus and refferal rewards in the membership
@@ -331,7 +333,7 @@ const Home1Page = () => {
                     </div>
                     </div>
                     <Text
-                      className="max-w-[400px] md:max-w-full sm:text-[10.14px] text-black-900_01 text-xl"
+                      className="max-w-[400px] md:max-w-full sm:leading-tight sm:pl-2 sm:text-[10.14px] text-black-900_01 text-xl"
                       size="txtPoppinsSemiBold20Black90001"
                     >
                       Pages and marketplace gives you tools to promote your
@@ -350,12 +352,12 @@ const Home1Page = () => {
         </div>
         <div className="bg-gray-300 flex md:flex-col flex-row gap-[53px] items-center justify-start mt-[150px] p-[18px] w-full">
           <Img
-            className="md:flex-1 h-[478px] sm:h-auto sm:ml-[0] ml-[98px] object-cover w-[35%] md:w-full"
+            className="md:flex-1 h-[478px] md:w-[300px] xs:w-[200px] sm:w-[242.79px] sm:h-auto sm:ml-[0] ml-[98px] object-cover w-[35%] md:w-full"
             src="images/img_image97.png"
             alt="imageNinetySeven"
           />
           <Text
-            className="sm:text-4xl md:text-[38px] text-[40px] text-blue_gray-900"
+            className="sm:text-[20px] xs:text-[10px] sm:text-center md:text-[38px] text-[40px] text-blue_gray-900"
             size="txtPoppinsMedium40"
           >
             <span className="text-blue_gray-900 font-poppins text-left font-medium">
@@ -533,35 +535,35 @@ const Home1Page = () => {
             </div>
           </div>
         </div>
-        <div className="bg-gradient  h-[529px] md:h-[678px] mt-[203px] p-3.5 md:px-5 relative w-full">
+        <footer className="bg-gradient pb-7 h-[529px] mm:h-[1300] md:h-[678px] sm:h-[1200px] mt-[203px] p-3.5 md:px-5 relative w-full">
           <Img
-            className="absolute bottom-[3%] h-[475px] inset-x-[0] mx-auto object-cover w-[34%]"
+            className="absolute bottom-[3%] h-[475px] md:w-[350.48px] md:h-[333px] inset-x-[0] mx-auto object-cover w-[34%]"
             src="images/img_malipomawhite2.png"
             alt="malipomawhiteTwo"
           />
-          <div className="absolute flex inset-x-[0] mx-auto top-[3%] w-[1352px] md:w-full">
-            <div className="flex flex-col gap-5 items-start justify-start my-auto w-auto">
-              <div className="flex flex-row gap-[9.04px] items-center justify-center w-auto">
+          <div className="absolute flex mm:block md:block sm:space-y-10 md:space-y-2 md:p-6 inset-x-[0] mx-auto top-[3%] w-[1352px] md:w-full">
+            <div className="flex flex-col md:block md:p-3 gap-5 items-start justify-start my-auto w-auto">
+              <div className="flex flex-row gap-[9.04px] items-center justify-center md:justify-start w-auto">
                 <Img
                   className="h-[52px] md:h-auto object-cover w-[55px]"
                   src="images/img_malipoma.png"
                   alt="malipoma_One"
                 />
                 <Text
-                  className="sm:text-[32.16px] md:text-[34.16px] text-[36.16px] text-center text-white-A700 w-auto"
+                  className="sm:text-[32.16px] xs:text-[20px] md:text-[34.16px] text-[36.16px] text-center md:text-left text-white-A700 w-auto"
                   size="txtPoppinsBold3616"
                 >
                   DignityPoint
                 </Text>
               </div>
               <Text
-                className="max-w-[1158px] md:max-w-full sm:text-[40px] md:text-[46px] text-[50px] text-white-A700"
+                className="max-w-[1158px] md:mt-5 md:max-w-full sm:text-[36px] xs:text-[30px] md:text-[46px] text-[50px] text-white-A700"
                 size="txtPoppinsSemiBold50WhiteA700"
               >
                 The world is waiting for the sustainable solutions you can
                 create and connect globally.
               </Text>
-              <div className="flex flex-col items-center justify-start w-auto">
+              <div className="flex flex-col items-center sm:items-start justify-start w-auto">
                 <div className="flex flex-row gap-3.5 items-center justify-start w-auto">
                   <Img
                     className="h-10 w-10"
@@ -594,17 +596,42 @@ const Home1Page = () => {
             >
               Get Started
             </Button>
+            <div className="hidden space-x-5 mb-10 sm:flex flex-row">
+              <div className="items-start">
+              <Text className="text-left text-white-A700 text-[20px] font-opensans" size="txtPoppinsSemiBold16WhiteA700">
+                Follow us on
+              </Text>
+              </div>
+              <div className="space-y-3">
+                <Button className="items-center flex">
+                  <Img src="images/img_facebook.svg" />
+                  <Text className="text-[16px] text-white-A700 pl-4">Facebook</Text>
+                </Button>
+                <Button className="items-center flex">
+                  <Img src="images/twitter.png" />
+                  <Text className="text-[16px] text-white-A700 pl-4">Twitter</Text>
+                </Button>
+                <Button className="items-center flex">
+                  <Img src="images/linkedin.png" />
+                  <Text className="text-[16px] text-white-A700 pl-4">LinkedIn</Text>
+                </Button>
+                <Button className="items-center flex">
+                  <Img src="images/insta.png" />
+                  <Text className="text-[16px] text-white-A700 pl-4">Instagram</Text>
+                </Button>
+              </div>
+            </div>
           </div>
-          <div className="absolute bottom-[13%] flex flex-col gap-[18px] inset-x-[0] items-center justify-start mx-auto w-auto">
-            <Line className="bg-white-A700 h-0.5 rounded-[1px] w-full" />
-            <div className="flex sm:flex-col flex-row md:gap-10 items-start justify-between max-w-[1352px] w-full">
+          <div className="absolute bottom-[13%] mm:bottom-[2%] md:bottom-[2%] mt-[100px] flex flex-col gap-[18px] inset-x-[0] items-center justify-start mx-auto w-auto">
+            <Line className="bg-white-A700 h-0.5 rounded-[1px] w-full xs:w-[250px] mm:w-[313px] sm:w-[313px]" />
+            <div className="flex md:flex-col sm:p-5 md:mt-2 mm:mt-10 flex-row md:gap-10 items-start justify-between max-w-[1352px] w-full">
               <Text
                 className="text-white-A700 text-xl w-auto"
                 size="txtPoppinsSemiBold20"
               >
                 © 2024 DignityPoint
               </Text>
-              <div className="flex sm:flex-1 sm:flex-col flex-row gap-[30px] items-start justify-start w-auto sm:w-full">
+              <div className="flex sm:flex-1 sm:flex-col flex-row gap-[30px] md:gap-[10px] items-start justify-start w-auto sm:w-full">
                 <a
                   href="javascript:"
                   className="text-white-A700 text-xl w-auto"
@@ -620,7 +647,7 @@ const Home1Page = () => {
               </div>
             </div>
           </div>
-        </div>
+        </footer>
       </div>
     </>
   );
