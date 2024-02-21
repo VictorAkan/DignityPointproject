@@ -10,11 +10,11 @@ const CreatenewaccountPage = () => {
 
   return (
     <>
-      <div className="bg-white-A700_01 flex flex-col font-poppins gap-[53px] items-center justify-start mx-auto pb-[78px] w-full">
+      <div className="bg-white-A700_01 flex sm:px-2 flex-col font-poppins gap-[53px] items-center justify-start mx-auto pb-[78px] w-full">
         <Header3 className="bg-white-A700 flex gap-2.5 items-center justify-center px-20 md:px-5 py-3.5 w-full" />
-        <div className="bg-white-A700 flex flex-col gap-[30px] items-center justify-start md:px-5 px-[30px] py-5 shadow-bs5 w-[610px] md:w-full">
+        <form className="bg-white-A700 flex flex-col gap-[30px] items-center justify-start md:px-5 px-[30px] py-5 shadow-bs5 w-[610px] md:w-full">
           <Img
-            className="h-[66px] md:h-auto object-cover w-[70px] sm:w-full"
+            className="h-[66px] md:h-auto object-cover w-[70px]"
             src="images/img_malipoma.png"
             alt="malipomaOne"
           />
@@ -27,7 +27,7 @@ const CreatenewaccountPage = () => {
                 Create a new account
               </Text>
               <Text
-                className="max-w-[550px] md:max-w-full text-base text-center text-gray-700"
+                className="max-w-[550px] md:max-w-full sm:text-[16px] text-base text-center text-gray-700"
                 size="txtPoppinsSemiBold16Gray700"
               >
                 Networking people, places and things towards delivering a
@@ -86,7 +86,7 @@ const CreatenewaccountPage = () => {
             >
               Create Account
             </Button>
-            <div className="flex flex-row sm:gap-10 items-center justify-between w-[550px] sm:w-full">
+            <div className="flex flex-row xs:flex-col sm:gap-10 items-center justify-between w-[550px] sm:w-full">
               <Text
                 className="common-pointer text-base text-center text-indigo-A200 w-auto"
                 size="txtPoppinsSemiBold16IndigoA200"
@@ -102,14 +102,11 @@ const CreatenewaccountPage = () => {
               </Text>
             </div>
             <div className="flex sm:flex-col flex-row gap-[5px] items-start justify-between w-[550px] sm:w-full">
-              <Input
-                name="signinoption"
-                placeholder="Continue with Google"
-                className="font-semibold leading-[normal] p-0 placeholder:text-gray-700 text-base text-left w-full"
-                wrapClassName="border border-gray-500_01 border-solid flex sm:w-full"
-                prefix={
+              <Button
+                className="border border-gray-500_01 border-solid cursor-pointer flex items-center sm:items-start sm:justify-start justify-center sm:min-w-full min-w-[272px]"
+                leftIcon={
                   <Img
-                    className="h-[30px] mr-2.5 my-auto"
+                    className="h-[26px] mr-2.5 my-auto"
                     src="images/img_google.svg"
                     alt="google"
                   />
@@ -118,12 +115,12 @@ const CreatenewaccountPage = () => {
                 color="blue_gray_50"
                 size="md"
                 variant="fill"
-              ></Input>
+              ><div className="font-semibold leading-[normal] text-base text-left">Continue with Google</div></Button>
               <Button
-                className="border border-gray-500_01 border-solid cursor-pointer flex items-center justify-center min-w-[272px]"
+                className="border border-gray-500_01 border-solid cursor-pointer flex items-center sm:items-start sm:justify-start justify-center sm:min-w-full min-w-[272px]"
                 leftIcon={
                   <Img
-                    className="h-[30px] mr-2.5"
+                    className="h-[26px] mr-2.5"
                     src="images/img_facebook_white_a700.png"
                     alt="Facebook"
                   />
@@ -139,7 +136,7 @@ const CreatenewaccountPage = () => {
               </Button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </>
   );
