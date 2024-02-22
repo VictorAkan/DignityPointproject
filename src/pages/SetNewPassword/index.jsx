@@ -10,7 +10,7 @@ const SetNewPasswordPage = () => {
 
   return (
     <>
-      <div className="bg-white-A700_01 flex flex-col font-poppins sm:gap-10 md:gap-10 gap-32 items-center justify-start mx-auto pb-[212px] w-full">
+      <div className="bg-white-A700_01 flex px-2 flex-col font-poppins sm:gap-10 md:gap-10 gap-32 items-center justify-start mx-auto pb-[212px] w-full">
         <Header3 className="bg-white-A700 flex gap-2.5 items-center justify-center px-20 md:px-5 py-3.5 w-full" />
         <div className="bg-white-A700 flex flex-col font-outfit gap-[30px] items-center justify-start md:px-5 px-[30px] py-5 shadow-bs5 w-auto md:w-full">
           <Text

@@ -84,7 +84,7 @@ const Header3 = (props) => {
             <Button onClick={() => setMenuOpen(true)} className="mobile-menu cursor-pointer">
               <div></div>
               <div></div>
-              <div></div>
+              <div></div> 
             </Button>
           </div>
           <div className="flex sm:flex-col flex-row gap-[30px] h-[55px] md:h-auto sm:hidden items-center justify-start w-auto">

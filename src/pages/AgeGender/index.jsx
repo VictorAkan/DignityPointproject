@@ -1,13 +1,10 @@
 import React from "react";
 
-import { Button, Img, SelectBox, Text } from "components";
-import Header3 from "components/Header3";
+import { Button, Img, SelectBox, Input, Text } from "components";
+import Header3b from "components/Header3b";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const inputOptionsList = [
-  { label: "Option1", value: "option1" },
-  { label: "Option2", value: "option2" },
-  { label: "Option3", value: "option3" },
-];
 const inputcontentOptionsList = [
   { label: "Option1", value: "option1" },
   { label: "Option2", value: "option2" },
@@ -18,25 +15,28 @@ const inputcontentOneOptionsList = [
   { label: "Option2", value: "option2" },
   { label: "Option3", value: "option3" },
 ];
-const inputcontentTwoOptionsList = [
-  { label: "Option1", value: "option1" },
-  { label: "Option2", value: "option2" },
-  { label: "Option3", value: "option3" },
-];
-const inputcontentThreeOptionsList = [
-  { label: "Option1", value: "option1" },
-  { label: "Option2", value: "option2" },
-  { label: "Option3", value: "option3" },
-];
 
 const AgeGenderPage = () => {
+  const navigate = useNavigate();
+  const [inputType, setInputType] = useState("text");
+
+  const handleFocus = () => {
+    setInputType("date")
+  }
+
+  const handleBlur = () => {
+    if (!e.target.value.trim()) {
+      setInputType("text")
+    }
+  }
+
   return (
     <>
-      <div className="bg-white-A700_01 flex flex-col font-poppins gap-[43px] items-center justify-start mx-auto pb-[125px] w-full">
-        <Header3 className="bg-white-A700 flex gap-2.5 items-center justify-center px-20 md:px-5 py-3.5 w-full" />
+      <div className="bg-white-A700_01 sm:px-2 flex flex-col font-poppins gap-[43px] items-center justify-start mx-auto pb-[125px] w-full">
+        <Header3b className="bg-white-A700 flex gap-2.5 items-center justify-center px-20 md:px-5 py-3.5 w-full" />
         <div className="bg-white-A700 flex flex-col gap-[30px] items-center justify-start md:px-5 px-[30px] py-5 shadow-bs5 w-auto md:w-full">
           <Img
-            className="h-[66px] md:h-auto object-cover w-[70px] sm:w-full"
+            className="h-[66px] md:h-auto object-cover w-[70px]"
             src="images/img_malipoma.png"
             alt="malipomaOne"
           />
@@ -62,7 +62,17 @@ const AgeGenderPage = () => {
                 Enter your personal info and choose an account privacy setting
               </Text>
             </div>
-            <SelectBox
+            <input
+              className="!text-gray-700 font-semibold p-4 bg-indigo-50 border-0 rounded-md leading-[normal] text-base text-left w-full"
+              type={inputType}
+              name="input"
+              placeholder="Date of birth"
+              onFocus={handleFocus}
+              onBlur={handleBlur}
+            // Other attributes such as placeholderClassName, indicator, isMulti, options, isSearchable, shape, color, size, and variant are not applicable to input[type=date].
+            />
+
+            {/* <SelectBox
               className="!text-gray-700 font-semibold leading-[normal] text-base text-left w-full"
               placeholderClassName="!text-gray-700"
               indicator={
@@ -81,7 +91,7 @@ const AgeGenderPage = () => {
               color="indigo_50"
               size="xl"
               variant="fill"
-            />
+            /> */}
             <div className="flex sm:flex-col flex-row gap-[30px] h-[52px] md:h-auto items-center justify-start w-[550px] sm:w-full">
               <SelectBox
                 className="!text-gray-700 font-semibold h-[52px] leading-[normal] text-base text-left w-[48%] sm:w-full"
@@ -98,7 +108,7 @@ const AgeGenderPage = () => {
                 options={inputcontentOptionsList}
                 isSearchable={false}
                 placeholder="Country"
-                shape="square"
+                shape="round"
                 color="indigo_50"
                 size="xl"
                 variant="fill"
@@ -118,13 +128,13 @@ const AgeGenderPage = () => {
                 options={inputcontentOneOptionsList}
                 isSearchable={false}
                 placeholder="State/City"
-                shape="square"
+                shape="round"
                 color="indigo_50"
                 size="xl"
                 variant="fill"
               />
             </div>
-            <div className="flex sm:flex-col flex-row gap-[30px] h-[52px] md:h-auto items-center justify-start w-[550px] sm:w-full">
+            {/* <div className="flex sm:flex-col flex-row gap-[30px] h-[52px] md:h-auto items-center justify-start w-[550px] sm:w-full">
               <SelectBox
                 className="font-medium h-[52px] leading-[normal] text-base text-left w-[48%] sm:w-full"
                 placeholderClassName="text-gray-700"
@@ -165,12 +175,13 @@ const AgeGenderPage = () => {
                 size="xl"
                 variant="fill"
               />
-            </div>
+            </div> */}
             <Button
               className="cursor-pointer font-semibold leading-[normal] min-w-[550px] sm:min-w-full rounded-[12px] text-base text-center"
               color="light_blue_900"
               size="md"
               variant="fill"
+              onClick={() => navigate("/interests")}
             >
               Next
             </Button>

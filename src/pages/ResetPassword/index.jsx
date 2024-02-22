@@ -10,7 +10,7 @@ const ResetPasswordPage = () => {
 
   return (
     <>
-      <div className="bg-white-A700_01 flex flex-col font-poppins sm:gap-10 md:gap-10 gap-[207px] items-center justify-start mx-auto pb-[290px] w-full">
+      <div className="bg-white-A700_01 px-2 flex flex-col font-poppins sm:gap-10 md:gap-10 gap-[207px] items-center justify-start mx-auto pb-[290px] w-full">
         <Header3 className="bg-white-A700 flex gap-2.5 items-center justify-center px-20 md:px-5 py-3.5 w-full" />
         <div className="bg-white-A700 flex flex-col gap-[30px] items-center justify-start md:px-5 px-[30px] py-5 rounded-[20px] shadow-bs5 w-auto md:w-full">
           <Text

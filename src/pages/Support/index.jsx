@@ -11,19 +11,19 @@ const SupportPage = () => {
       <div className="bg-white-A700_01 flex flex-col font-poppins items-center justify-start mx-auto w-full">
         <div className="flex flex-col items-start justify-start w-full">
           <div
-            className="bg-cover bg-no-repeat md:h-[454px] h-[481px] md:px-5 relative w-full"
+            className="bg-cover bg-no-repeat sm:h-[300px] md:h-[454px] h-[481px] md:px-5 relative w-full"
             style={{ backgroundImage: "url('images/img_support.png')" }}
           >
-            <div className="absolute bg-gradient3  flex flex-col h-max inset-[0] items-center justify-center m-auto p-[133px] md:px-10 sm:px-5 w-full">
+            <div className="absolute bg-gradient3  flex flex-col h-max sm:h-[300px] inset-[0] items-center justify-center m-auto p-[133px] md:px-10 sm:px-5 w-full">
               <div className="h-32 md:h-[188px] mb-[83px] relative w-[470px] sm:w-full">
                 <Text
-                  className="absolute inset-x-[0] mx-auto mt-0 sm:mt-[173px] md:text-5xl sm:text-[40px] text-[70px] xs:text-[30px] text-center text-white-A700 top-[0] w-max"
+                  className="absolute inset-x-[0] mx-auto mt-0 sm:mt-[50px] md:text-5xl sm:text-[40px] text-[70px] xs:text-[30px] text-center text-white-A700 top-[0] w-max"
                   size="txtPoppinsSemiBold70"
                 >
                   Contact Us
                 </Text>
                 <Text
-                  className="absolute bottom-[-1%] sm:bottom-[-96px] sm:w-[275px] inset-x-[0] mt-0 sm:mt-[173px] mx-auto text-white-A700 sm:text-[16px] text-xl sm:text-center sm:w-full w-max"
+                  className="absolute bottom-[-1%] sm:bottom-[-160px] sm:w-[275px] inset-x-[0] mt-0 sm:mt-[173px] mx-auto text-white-A700 sm:text-[16px] text-xl sm:text-center sm:w-full w-max"
                   size="txtPoppinsSemiBold20"
                 >
                   Get in touch with us directly to make enquiries
